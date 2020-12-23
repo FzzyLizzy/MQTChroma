@@ -23,8 +23,9 @@ namespace MQTChroma
     {
         public MQTChroma()
         {
-            InitializeComponent();
             Chroma.Instance.Initialize();
+            InitializeComponent();
+            Task t2 = Task.Run(() => { Task.Delay(800).Wait(); RazerSet(0, 0, 0); });
         }
         public void RazerSet(int R, int G, int B) {
             var color = new ColoreColor((byte)R, (byte)G, (byte)B);
