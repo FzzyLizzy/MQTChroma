@@ -34,7 +34,7 @@ namespace MQTChroma
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RazerSet(Convert.ToInt32(Color_R.Value), Convert.ToInt32(Color_G.Value), Convert.ToInt32(Color_B.Value));
+            RazerSet(Convert.ToInt32(ColorR.Value), Convert.ToInt32(ColorG.Value), Convert.ToInt32(ColorB.Value));
         }
     }
 }

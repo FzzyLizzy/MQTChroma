@@ -30,20 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MQTChroma));
             this.button1 = new System.Windows.Forms.Button();
-            this.Color_R = new System.Windows.Forms.NumericUpDown();
-            this.Color_G = new System.Windows.Forms.NumericUpDown();
-            this.Color_B = new System.Windows.Forms.NumericUpDown();
+            this.ColorR = new System.Windows.Forms.NumericUpDown();
+            this.ColorG = new System.Windows.Forms.NumericUpDown();
+            this.ColorB = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Color_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Color_G)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Color_B)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorG)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorB)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -56,41 +54,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Color_R
+            // ColorR
             // 
-            this.Color_R.Location = new System.Drawing.Point(27, 14);
-            this.Color_R.Maximum = new decimal(new int[] {
+            this.ColorR.Location = new System.Drawing.Point(27, 14);
+            this.ColorR.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.Color_R.Name = "Color_R";
-            this.Color_R.Size = new System.Drawing.Size(120, 20);
-            this.Color_R.TabIndex = 1;
+            this.ColorR.Name = "ColorR";
+            this.ColorR.Size = new System.Drawing.Size(120, 20);
+            this.ColorR.TabIndex = 1;
             // 
-            // Color_G
+            // ColorG
             // 
-            this.Color_G.Location = new System.Drawing.Point(27, 40);
-            this.Color_G.Maximum = new decimal(new int[] {
+            this.ColorG.Location = new System.Drawing.Point(27, 40);
+            this.ColorG.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.Color_G.Name = "Color_G";
-            this.Color_G.Size = new System.Drawing.Size(120, 20);
-            this.Color_G.TabIndex = 2;
-            // 
-            // Color_B
-            // 
-            this.Color_B.Location = new System.Drawing.Point(27, 66);
-            this.Color_B.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.Color_B.Name = "Color_B";
-            this.Color_B.Size = new System.Drawing.Size(120, 20);
-            this.Color_B.TabIndex = 3;
+            this.ColorG.Name = "ColorG";
+            this.ColorG.Size = new System.Drawing.Size(120, 20);
+            this.ColorG.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -99,10 +85,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.ColorB);
             this.groupBox1.Controls.Add(this.Color_B);
-            this.groupBox1.Controls.Add(this.Color_R);
-            this.groupBox1.Controls.Add(this.Color_G);
+            this.groupBox1.Controls.Add(this.ColorR);
+            this.groupBox1.Controls.Add(this.ColorG);
             this.groupBox1.Location = new System.Drawing.Point(50, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(160, 127);
@@ -110,35 +96,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Test Link";
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "R";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(27, 66);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(15, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "R";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "B";
             // 
             // label3
             // 
@@ -149,14 +114,35 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "G";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "B";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "R";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "R";
+            // 
+            // ColorB
+            // 
+            this.ColorB.Location = new System.Drawing.Point(27, 66);
+            this.ColorB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.ColorB.Name = "ColorB";
+            this.ColorB.Size = new System.Drawing.Size(120, 20);
+            this.ColorB.TabIndex = 3;
             // 
             // MQTChroma
             // 
@@ -169,12 +155,11 @@
             this.MaximizeBox = false;
             this.Name = "MQTChroma";
             this.Text = "MQTChroma";
-            ((System.ComponentModel.ISupportInitialize)(this.Color_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Color_G)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Color_B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorG)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,15 +167,15 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown Color_R;
-        private System.Windows.Forms.NumericUpDown Color_G;
+        private System.Windows.Forms.NumericUpDown ColorR;
+        private System.Windows.Forms.NumericUpDown ColorG;
         private System.Windows.Forms.NumericUpDown Color_B;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown ColorB;
     }
 }
 
