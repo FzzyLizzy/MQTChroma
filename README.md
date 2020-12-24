@@ -2,8 +2,9 @@
 Control your razer chroma peripherals with an MQTT message
 
 # MQTT
-| Topic| MQTChroma/{PCNAME}/Chroma|
-| payload|255,255,255|
+| Topic        | MQTChroma/{PCNAME}/Chroma|
+| ------------- |:-------------:|
+| payload      | 255,255,255 |
 
 # home assistant configuration
 ```yaml
