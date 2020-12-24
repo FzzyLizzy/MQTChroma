@@ -14,3 +14,7 @@ D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.csproj.CoreCompileInputs.cache
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.csproj.CopyComplete
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.exe
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.pdb
+D:\Github\MQTChroma\MQTChroma\bin\Debug\M2Mqtt.Net.dll
+D:\Github\MQTChroma\MQTChroma\bin\Debug\M2Mqtt.Net.pdb
+D:\Github\MQTChroma\MQTChroma\bin\Debug\Newtonsoft.Json.dll
+D:\Github\MQTChroma\MQTChroma\bin\Debug\Newtonsoft.Json.xml
