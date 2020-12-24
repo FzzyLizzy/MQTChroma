@@ -208,7 +208,6 @@
             this.MQTT_Password.Name = "MQTT_Password";
             this.MQTT_Password.Size = new System.Drawing.Size(144, 20);
             this.MQTT_Password.TabIndex = 1;
-            this.MQTT_Password.Text = "hassio";
             // 
             // MQTT_Username
             // 
@@ -216,7 +215,6 @@
             this.MQTT_Username.Name = "MQTT_Username";
             this.MQTT_Username.Size = new System.Drawing.Size(144, 20);
             this.MQTT_Username.TabIndex = 1;
-            this.MQTT_Username.Text = "hasmqtt";
             // 
             // MQTT_Port
             // 
@@ -232,7 +230,6 @@
             this.MQTT_Server.Name = "MQTT_Server";
             this.MQTT_Server.Size = new System.Drawing.Size(144, 20);
             this.MQTT_Server.TabIndex = 1;
-            this.MQTT_Server.Text = "192.168.2.2";
             // 
             // label8
             // 
