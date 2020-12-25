@@ -22,5 +22,53 @@ namespace MQTChroma.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MQTT_Broker {
+            get {
+                return ((string)(this["MQTT_Broker"]));
+            }
+            set {
+                this["MQTT_Broker"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1883")]
+        public string MQTT_Port {
+            get {
+                return ((string)(this["MQTT_Port"]));
+            }
+            set {
+                this["MQTT_Port"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MQTT_UserName {
+            get {
+                return ((string)(this["MQTT_UserName"]));
+            }
+            set {
+                this["MQTT_UserName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MQTT_Password {
+            get {
+                return ((string)(this["MQTT_Password"]));
+            }
+            set {
+                this["MQTT_Password"] = value;
+            }
+        }
     }
 }

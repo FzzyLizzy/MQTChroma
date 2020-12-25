@@ -3,9 +3,6 @@ D:\Github\MQTChroma\MQTChroma\bin\Debug\MQTChroma.exe
 D:\Github\MQTChroma\MQTChroma\bin\Debug\MQTChroma.pdb
 D:\Github\MQTChroma\MQTChroma\bin\Debug\Corale.Colore.dll
 D:\Github\MQTChroma\MQTChroma\bin\Debug\Corale.Colore.WinForms.dll
-D:\Github\MQTChroma\MQTChroma\bin\Debug\Corale.Colore.xml
-D:\Github\MQTChroma\MQTChroma\bin\Debug\Corale.Colore.WinForms.pdb
-D:\Github\MQTChroma\MQTChroma\bin\Debug\Corale.Colore.WinForms.xml
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.csprojAssemblyReference.cache
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.MQTChroma.resources
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.Properties.Resources.resources
@@ -15,6 +12,5 @@ D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.csproj.CopyComplete
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.exe
 D:\Github\MQTChroma\MQTChroma\obj\Debug\MQTChroma.pdb
 D:\Github\MQTChroma\MQTChroma\bin\Debug\M2Mqtt.Net.dll
-D:\Github\MQTChroma\MQTChroma\bin\Debug\M2Mqtt.Net.pdb
 D:\Github\MQTChroma\MQTChroma\bin\Debug\Newtonsoft.Json.dll
-D:\Github\MQTChroma\MQTChroma\bin\Debug\Newtonsoft.Json.xml
+D:\Github\MQTChroma\MQTChroma\bin\Debug\Guna.UI2.dll
