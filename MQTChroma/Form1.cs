@@ -26,7 +26,8 @@ namespace MQTChroma
     public partial class MQTChroma : Form
     {
         static MqttClient client;
-        string MQTChroma_Topic = "MQTChroma/"+ Environment.MachineName;
+        //string MQTChroma_Topic = "MQTChroma/"+ Environment.MachineName;
+        string MQTChroma_Topic = "MQTChroma";
         bool connected = false;
         public MQTChroma()
         {
@@ -111,9 +112,9 @@ namespace MQTChroma
                     MQTT_Status.Text = "Connected";
                     //Subcribe Topic
                     client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;
-                    client.Subscribe(new string[] { MQTChroma_Topic + "/Chroma", MQTChroma_Topic + "/switch", MQTChroma_Topic + "/status" }, new byte[] { 0, 0, 0 });
+                    client.Subscribe(new string[] { MQTChroma_Topic + "/RGB", MQTChroma_Topic + "/switch", MQTChroma_Topic + "/status" }, new byte[] { 0, 0, 0 });
                     client.Publish(MQTChroma_Topic + "/status", Encoding.UTF8.GetBytes("ON"));
-                    client.Publish(MQTChroma_Topic + "/Chroma", Encoding.UTF8.GetBytes("255,255,255"));
+                    client.Publish(MQTChroma_Topic + "/RGB", Encoding.UTF8.GetBytes("255,255,255"));
                 }
 
                 else MessageBox.Show(this, "Connect Fail", "Message", MessageBoxButtons.OK, MessageBoxIcon.Question);
@@ -155,7 +156,7 @@ namespace MQTChroma
         void Receive(string message, string topic)
         {
 
-            if (topic == MQTChroma_Topic+ "/Chroma")
+            if (topic == MQTChroma_Topic+ "/RGB")
             {
                 //MessageBox.Show(message);
                 string[] words = message.Split(',');
