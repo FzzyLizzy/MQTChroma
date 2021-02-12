@@ -87,7 +87,7 @@ namespace MQTChroma
         {
             if (connected)
             {
-                client.Publish(MQTChroma_Topic + "/status", Encoding.UTF8.GetBytes("OFF"));
+                client.Publish(MQTChroma_Topic + "/status", Encoding.UTF8.GetBytes("Off"));
             }
             notifyIcon.Visible = false;
             Environment.Exit(0);
@@ -112,7 +112,7 @@ namespace MQTChroma
                     MQTT_Status.Text = "Connected";
                     //Subcribe Topic
                     client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;
-                    client.Subscribe(new string[] { MQTChroma_Topic + "/RGB", MQTChroma_Topic + "/switch", MQTChroma_Topic + "/status" }, new byte[] { 0, 0, 0 });
+                    client.Subscribe(new string[] { MQTChroma_Topic + "/RGB", MQTChroma_Topic + "/switch", MQTChroma_Topic + "/status", MQTChroma_Topic + "/effect" }, new byte[] { 0, 0, 0, 0 });
                     client.Publish(MQTChroma_Topic + "/status", Encoding.UTF8.GetBytes("ON"));
                     client.Publish(MQTChroma_Topic + "/RGB", Encoding.UTF8.GetBytes("255,255,255"));
                 }
@@ -153,6 +153,7 @@ namespace MQTChroma
 
         // MQTT Client
 
+        [Obsolete]
         void Receive(string message, string topic)
         {
 
